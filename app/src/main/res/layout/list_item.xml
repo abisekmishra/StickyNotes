@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.9">
+
+        <TextView
+            android:id="@+id/stickyName"
+            android:layout_weight="0.3"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            tools:text="NAME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/stickyDescription"
+            android:layout_weight="0.7"
+            android:paddingStart="8dp"
+            android:paddingBottom="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            tools:text="This is a sample description to check if text is ellipsized"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <CheckBox
+        android:layout_weight="0.1"
+        android:id="@+id/stickyPinButton"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:button="@drawable/star_radio_button"
+        android:checked="false"/>
+
+</LinearLayout>
+
+
